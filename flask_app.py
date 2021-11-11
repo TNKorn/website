@@ -10,6 +10,6 @@ def hello_world():
     return 'Hello!! :), from Bm'
 @app.route('/today')
 def hello_world_today():
-    return date.today()
+    return str(date.today())
 
 
