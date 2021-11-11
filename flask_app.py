@@ -9,7 +9,7 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello!! :), from Bm'
 @app.route('/today')
-def hello_world():
+def hello_world_today():
     return date.today()
 
 
