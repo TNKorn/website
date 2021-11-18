@@ -1,15 +1,21 @@
-
 # A very simple Flask Hello World app for you to get started with...
 
 from flask import Flask
 from datetime import date
+
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def hello_world():
-    return 'Hello!! :), from Bm'
-@app.route('/today')
+    return "Hello!! :), from Bm"
+
+
+@app.route("/today")
 def hello_world_today():
     return str(date.today())
 
 
+@app.route("/apple")
+def hello_world_apple():
+    return "This is an apple"
